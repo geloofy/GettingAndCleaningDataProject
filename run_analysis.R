@@ -66,3 +66,6 @@ dt$featAxis <- factor(x %*% y, labels=c(NA, "X", "Y", "Z"))
 setkey(dt, subject, activity, featDomain, featAcceleration, featInstrument, featJerk, featMagnitude, featVariable, featAxis)
 dtTidy <- dt[, list(count = .N, average = mean(value)), by=key(dt)]
 write.table(dtTidy, file="Tidy.txt", row.name=F)
+
+#create codebook
+knit("codebook.Rmd", output="codebook.md", encoding="ISO8859-1", quiet=TRUE)
