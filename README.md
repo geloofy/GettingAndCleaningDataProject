@@ -7,6 +7,8 @@ run_analysis.R
 -------------------------------
 
 Main analysis script
+* Loads the required packages: "data.table", "reshape2", "knitr"
+* Initializes variables
 * Imports data
 * Merges data sets
 * Extracts mean and standard deviation
