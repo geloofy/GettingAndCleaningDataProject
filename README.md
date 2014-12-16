@@ -3,6 +3,9 @@ GettingAndCleaningDataProject
 
 Course Project for Coursera Getting and Cleaning Data course
 
+To run, first ensure source files are available in working directory.
+Run source("run_analysis.R") from R console.
+
 run_analysis.R
 -------------------------------
 
