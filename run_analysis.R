@@ -1,3 +1,11 @@
+#load required packages
+packages <- c("data.table", "reshape2", "knitr")
+sapply(packages, require, character.only=TRUE, quietly=TRUE)
+
+#initialize variables
+path <- getwd()
+pathIn <- file.path(path, "UCI HAR Dataset")
+
 #read source files
 dtSubjectTrain <- fread(file.path(pathIn, "train", "subject_train.txt"))
 dtSubjectTest  <- fread(file.path(pathIn, "test" , "subject_test.txt" ))
